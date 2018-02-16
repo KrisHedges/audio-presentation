@@ -1,0 +1,28 @@
+{
+  "name": "audio-presentation",
+  "version": "1.0.0",
+  "description": "A simple HTML5 MP3 player that allows the presentation of strings at certain times during playback using JSON.",
+  "scripts": {
+    "less": "node node_modules/less/bin/lessc src/css/src/main.less dist/audio_presenter.css",
+    "babel": "node node_modules/babel-cli/bin/babel --presets es2015 src/js/main.js -o dist/audio_presenter.js",
+    "less-watch": "node node_modules/less-watch-compiler/dist/less-watch-compiler src/css/src src/css/build main.less",
+    "babel-watch": "node node_modules/babel-cli/bin/babel --watch --presets es2015 src/js/main.js -o src/js/build/main.bundle.js",
+    "minify-css": "node node_modules/clean-css-cli/bin/cleancss --compatibility '*' dist/audio_presenter.css -o dist/audio_presenter.min.css",
+    "minify-js": "node node_modules/uglify-js/bin/uglifyjs dist/audio_presenter.js -o dist/audio_presenter.min.js",
+    "start": "npm run less-watch & npm run babel-watch & cd src && http-server -p 8000",
+    "build": "npm run less & npm run babel && npm run minify-css && npm run minify-js"
+  },
+  "author": "Kris Hedges",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-css": "^4.1.9",
+    "clean-css-cli": "^4.1.10",
+    "http-server": "^0.11.1",
+    "less": "^3.0.0",
+    "less-watch-compiler": "^1.11.0",
+    "uglify-js": "^3.3.10"
+  }
+}
