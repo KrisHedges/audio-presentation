@@ -2,11 +2,19 @@
 
 Use this to create audio presentations. 
 It will present text along side an audio track to explain/accompany whats beeing heard at that time.
+You can see an example in use at [http://quirkiaudio.com](Quirki Audio)
+Or follow the Developing instructions below.
 
 ## Usage
 
 Download the latest minified js and optional css files in /dist or build them yourself by cloning this repo and running `yarn build`.
-`Include those files in your page and begin creating Audio Presentations in your html with this.
+
+Or just...
+```
+npm install audio-presentation
+```
+
+Include the audio_presenter.min.js and optionally the audio_presenter.min.css files in your page and begin creating Audio Presentations in your html with this.
 
 ```
     <div
