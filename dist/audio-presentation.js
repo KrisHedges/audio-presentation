@@ -11,7 +11,7 @@ var AudioPresentation = function () {
     _classCallCheck(this, AudioPresentation);
 
     this.state = {
-      presenter_elements: Array.from(document.getElementsByClassName('audio-presenter')),
+      presenter_elements: Array.from(document.getElementsByClassName('audio-presentation')),
       presenters: []
     };
   }

@@ -15,13 +15,14 @@ Or just...
 npm install audio-presentation
 ```
 
-Include the audio_presenter.min.js and optionally the audio_presenter.min.css files in your page.
+Include the audio-presentation.min.js and optionally the audio-presentation.min.css files in your page.
 
-Begin creating Audio Presentations in your html with this.
+Begin creating Audio Presentations in your html.
+A block element usually a div with a class of "audio-presentation" and three data attributes providing relevant file paths and urls to the source audio file, the json to be used for the timeline, and a default message to display when the audio is not playing.
 
 ```
     <div
-      class="audio-presenter"
+      class="audio-presentation"
       data-source="path_or_url_to_mp3_file"
       data-timeline="pathi_or_url_to_json_containing_timeline_data"
       data-message="Default Message to Display when not playing">
@@ -31,7 +32,7 @@ Begin creating Audio Presentations in your html with this.
 Then initialize the script in your own JS in a document ready with...
 ```
 let audioPresentation = new AudioPresentation();
-audioPresenter.start();
+audioPresentation.start();
 
 ```
 
