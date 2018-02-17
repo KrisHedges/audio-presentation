@@ -2,7 +2,7 @@
 ![Dylan On Users](https://media.giphy.com/media/xBqnekPyrBTPPdkZ4z/giphy.gif)
 
 Use this to create audio presentations. 
-It will present text along side an audio track to explain/accompany whats beeing heard at that time.
+It will present text along side an audio track to explain or accompany whats being heard at that time.
 You can see an example in use at http://quirkiaudio.com
 Or follow the Developing instructions below.
 
