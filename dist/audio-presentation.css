@@ -8,6 +8,7 @@
   margin: 1em 0;
   text-align: center;
   clear: both;
+  transform: translate3d(0, 0, 0);
 }
 .audio-presenter:after {
   display: table;
@@ -99,10 +100,8 @@
   margin: 50% 0 0 50%;
 }
 .audio-presenter .presentation {
-  display: inline-block;
-  transform: translateY(-33%);
-  line-height: 40px;
-  margin-left: 1em;
+  display: block;
+  margin: 1em auto;
   font-size: 1.2em;
   transition: all 130ms linear;
 }
