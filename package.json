@@ -1,6 +1,6 @@
 {
   "name": "audio-presentation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple HTML5 MP3 player that allows the presentation of strings at certain times during playback using JSON to define the timeline.",
   "repository": {
     "type": "git",
