@@ -1,4 +1,4 @@
-class AudioPresenter {
+class AudioPresentation {
   constructor(){
     this.state ={
       presenter_elements: Array.from(document.getElementsByClassName('audio-presenter')),
@@ -6,7 +6,7 @@ class AudioPresenter {
     };
   }
 
-  initialize(){
+  start(){
     for (let [ index, presenter ] of this.state.presenter_elements.entries()){
       let timeline_url = presenter.getAttribute('data-timeline');
 

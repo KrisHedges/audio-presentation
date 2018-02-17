@@ -27,8 +27,8 @@
     <script src="js/build/main.bundle.js"></script>
     <script>
       document.onreadystatechange = () => {
-        let audioPresenter = new AudioPresenter();
-        if (document.readyState === "interactive") audioPresenter.initialize();
+        let audioPresentation = new AudioPresentation();
+        if (document.readyState === "interactive") audioPresentation.start();
       }
     </script>
   </body>

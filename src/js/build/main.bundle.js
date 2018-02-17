@@ -6,9 +6,9 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var AudioPresenter = function () {
-  function AudioPresenter() {
-    _classCallCheck(this, AudioPresenter);
+var AudioPresentation = function () {
+  function AudioPresentation() {
+    _classCallCheck(this, AudioPresentation);
 
     this.state = {
       presenter_elements: Array.from(document.getElementsByClassName('audio-presenter')),
@@ -16,9 +16,9 @@ var AudioPresenter = function () {
     };
   }
 
-  _createClass(AudioPresenter, [{
-    key: 'initialize',
-    value: function initialize() {
+  _createClass(AudioPresentation, [{
+    key: 'start',
+    value: function start() {
       var _this = this;
 
       var _iteratorNormalCompletion = true;
@@ -146,5 +146,5 @@ var AudioPresenter = function () {
     }
   }]);
 
-  return AudioPresenter;
+  return AudioPresentation;
 }();
