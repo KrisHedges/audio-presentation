@@ -1,4 +1,5 @@
 # Audio Presentation
+![Dylan On Users](https://media.giphy.com/media/xBqnekPyrBTPPdkZ4z/giphy.gif)
 
 Use this to create audio presentations. 
 It will present text along side an audio track to explain/accompany whats beeing heard at that time.
