@@ -14,7 +14,9 @@ Or just...
 npm install audio-presentation
 ```
 
-Include the audio_presenter.min.js and optionally the audio_presenter.min.css files in your page and begin creating Audio Presentations in your html with this.
+Include the audio_presenter.min.js and optionally the audio_presenter.min.css files in your page.
+
+Begin creating Audio Presentations in your html with this.
 
 ```
     <div
@@ -25,6 +27,22 @@ Include the audio_presenter.min.js and optionally the audio_presenter.min.css fi
     </div>
 
 ```
+Then initialize the script in your own JS in a document ready with...
+```
+let audioPresenter = new AudioPresenter();
+audioPresenter.initialize();
+
+```
+
+Vanilla JS Document ready example.
+```
+document.onreadystatechange = () => {
+  let audioPresenter = new AudioPresenter();
+  if (document.readyState === "interactive") audioPresenter.initialize();
+}
+```
+
+## Creating a Timeline
 
 Timeline JSON should be an aray of objects each conatining time and message key.
 
