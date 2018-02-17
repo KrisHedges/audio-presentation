@@ -19,6 +19,7 @@ Download the latest minified js and optional css files in /dist or build them yo
 ```
 
 Timeline JSON should be an aray of objects each conatining time and message key.
+
 Example object:
 ```
 {"time:" time_in_seconds.milliseconds, "message": string_to_display_at_time}
