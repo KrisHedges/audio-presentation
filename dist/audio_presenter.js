@@ -6,9 +6,9 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var AudioPresenter = function () {
-  function AudioPresenter() {
-    _classCallCheck(this, AudioPresenter);
+var AudioPresentation = function () {
+  function AudioPresentation() {
+    _classCallCheck(this, AudioPresentation);
 
     this.state = {
       presenter_elements: Array.from(document.getElementsByClassName('audio-presenter')),
@@ -16,9 +16,9 @@ var AudioPresenter = function () {
     };
   }
 
-  _createClass(AudioPresenter, [{
-    key: 'presenterStart',
-    value: function presenterStart() {
+  _createClass(AudioPresentation, [{
+    key: 'start',
+    value: function start() {
       var _this = this;
 
       var _iteratorNormalCompletion = true;
@@ -37,7 +37,7 @@ var AudioPresenter = function () {
 
           fetch(timeline_url).then(function (response) {
             response.json().then(function (timeline_data) {
-              this.pushPresenter(timeline_data, presenter);
+              this.addPresenter(timeline_data, presenter);
               this.bindEvents();
             }.bind(this));
           }.bind(_this));
@@ -91,8 +91,8 @@ var AudioPresenter = function () {
       }.bind(this));
     }
   }, {
-    key: 'pushPresenter',
-    value: function pushPresenter(timeline_data, presenter) {
+    key: 'addPresenter',
+    value: function addPresenter(timeline_data, presenter) {
       this.state.presenters.push({
         'playButton': presenter.getElementsByClassName('player')[0],
         'audioElement': presenter.getElementsByTagName('audio')[0],
@@ -146,5 +146,5 @@ var AudioPresenter = function () {
     }
   }]);
 
-  return AudioPresenter;
+  return AudioPresentation;
 }();
