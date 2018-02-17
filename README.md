@@ -2,7 +2,7 @@
 
 Use this to create audio presentations. 
 It will present text along side an audio track to explain/accompany whats beeing heard at that time.
-You can see an example in use at [http://quirkiaudio.com](Quirki Audio)
+You can see an example in use at http://quirkiaudio.com
 Or follow the Developing instructions below.
 
 ## Usage
