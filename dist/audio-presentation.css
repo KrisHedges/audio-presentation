@@ -23,17 +23,12 @@
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  box-shadow: 0 0 8px rgba(102, 102, 102, 0.23);
   position: relative;
   cursor: pointer;
   transition: all 130ms linear;
   user-select: none;
   tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.audio-presentation .player:hover,
-.audio-presentation .player:focus {
-  box-shadow: 0 4px 6px rgba(102, 102, 102, 0.33);
 }
 .audio-presentation .player:hover button,
 .audio-presentation .player:focus button {
