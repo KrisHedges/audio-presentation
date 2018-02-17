@@ -29,16 +29,16 @@ Begin creating Audio Presentations in your html with this.
 ```
 Then initialize the script in your own JS in a document ready with...
 ```
-let audioPresenter = new AudioPresenter();
-audioPresenter.initialize();
+let audioPresentation = new AudioPresentation();
+audioPresenter.start();
 
 ```
 
 Vanilla JS Document ready example.
 ```
 document.onreadystatechange = () => {
-  let audioPresenter = new AudioPresenter();
-  if (document.readyState === "interactive") audioPresenter.initialize();
+  let audioPresentation = new AudioPresentation();
+  if (document.readyState === "interactive") audioPresentation.start();
 }
 ```
 
