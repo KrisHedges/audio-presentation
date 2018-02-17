@@ -1,7 +1,11 @@
 {
   "name": "audio-presentation",
   "version": "1.0.0",
-  "description": "A simple HTML5 MP3 player that allows the presentation of strings at certain times during playback using JSON.",
+  "description": "A simple HTML5 MP3 player that allows the presentation of strings at certain times during playback using JSON to define the timeline.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KrisHedges/audio-presentation"
+  },
   "scripts": {
     "less": "node node_modules/less/bin/lessc src/css/src/main.less dist/audio_presenter.css",
     "babel": "node node_modules/babel-cli/bin/babel --presets es2015 src/js/main.js -o dist/audio_presenter.js",
@@ -14,6 +18,7 @@
   },
   "author": "Kris Hedges",
   "license": "MIT",
+  "homepage": "https://github.com/KrisHedges/audio-presentation",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
